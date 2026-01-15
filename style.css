@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid red;
+}
+
 .app-layout {
     display: grid;
     grid-template-areas: ". header ."
@@ -12,6 +16,39 @@
 
 header {
     grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header nav {
+    width: 50%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    padding: 0;
+}
+
+.menu li {
+    padding: 5px;
+    transition: background-color 0.2s ease;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+.menu li:hover {
+    background-color: lightgray;
+}
+
+.menu li a {
+    text-decoration: none;
+    color:blueviolet;
+    font-size: 1.5rem;
 }
 
 main {
