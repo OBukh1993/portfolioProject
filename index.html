@@ -4,9 +4,11 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Oleg Bukhtoiarov</title>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
     <script src='main.js'></script>
 </head>
 
@@ -16,10 +18,10 @@
             <h1>Oleg Bukhtoiarov</h1>
             <nav>
                 <ul class="menu">
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#about" class="selector">About Me</a></li>
+                    <li><a href="#projects" class="selector">Projects</a></li>
+                    <li><a href="#skills" class="selector">Skills</a></li>
+                    <li><a href="#contacts" class="selector">Contacts</a></li>
                 </ul>
             </nav>
         </header>
@@ -27,147 +29,156 @@
         <main>
             <section id="about">
                 <h2>About Me</h2>
-                <p id="about-text">
-                    Hello! My name is Oleg. I’m a 32-year-old ABAP developer with over 10 years of professional
-                    experience.
-                    I also have solid knowledge of Oracle Siebel CRM, C#, and web development (HTML, CSS,
-                    JavaScript).<br>
-                    I hold a degree in Business Informatics from the Faculty of Applied Mathematics, Computer Science,
-                    and
-                    Mechanics at Voronezh State University, which I completed in 2015.
-                </p>
-                <figure>
-                    <img src="resources/programmer.avif" alt="">
-                    <figcaption>The best programmer ever!</figcaption>
-                </figure>
+                <figure id="picture-figure">
+                    <img src="resources/programmer.avif" alt="" id="picture-img">
+                <figcaption>The best programmer ever!</figcaption>
+                </figure>  
+                <p class="about-text">Hello! My name is Oleg. I’m a 32-year-old ABAP developer with over 10 years of professional experience. I also have solid knowledge of Oracle Siebel CRM, C#, and web development (HTML, CSS, JavaScript). Throughout my career, I have had the opportunity to work on a wide range of projects, from implementing new features in complex ERP systems to optimizing existing code for better performance and maintainability. My work has often involved analyzing business requirements, designing technical solutions, and ensuring seamless integration between different software components.</p>
+                <p class="about-text">I hold a degree in Business Informatics from the Faculty of Applied Mathematics, Computer Science, and Mechanics at Voronezh State University, which I completed in 2015. During my studies, I focused on programming, database management, and system analysis, which provided me with a solid foundation for my professional career. I also gained insights into business processes, which helps me communicate effectively with stakeholders and translate business needs into technical specifications. My academic background allowed me to develop strong analytical thinking and problem-solving skills that I still rely on every day.</p>
+                <p class="about-text">Over the years, I have accumulated extensive experience in ABAP development, including designing custom reports, interfaces, forms, and enhancements. I have worked with both SAP ECC and SAP S/4HANA environments, contributing to projects that improved system efficiency and user satisfaction. In addition, I have solid experience with Oracle Siebel CRM, where I supported and developed modules to enhance customer relationship management for large organizations. This dual expertise in ERP and CRM systems gives me a comprehensive understanding of enterprise software ecosystems and how different solutions interact with one another.</p>
+                <p class="about-text">Beyond core technical skills, I have experience with web development technologies such as HTML, CSS, and JavaScript, which allows me to develop user-friendly interfaces and improve front-end functionality. I have also worked with C# in various internal tools and automation projects, which strengthened my programming versatility and understanding of object-oriented principles. I enjoy exploring new frameworks and libraries, as I believe continuous learning is crucial in the fast-evolving field of software development.</p>
+                <p class="about-text">In summary, I am a dedicated and experienced ABAP developer with a strong technical background, a solid understanding of business processes, and a continuous drive for learning and improvement. My combination of ERP and CRM experience, web development skills, and collaborative mindset enables me to contribute effectively to complex projects and deliver high-quality solutions. I am motivated by challenging tasks, enjoy solving problems, and aim to create software that adds real value to businesses and end users.</p>
             </section>
 
             <section id="projects">
                 <h2>Projects</h2>
                 <article class="company">
-                    <h3>Technoserv Consulting (T1)</h3>
+                    <h3 class="company-header selector">Technoserv Consulting (T1)</h3>
                     <section class="company-projects">
                         <article class="project">
-                            <h4>VTB Bank</h4>
-                            <p>2015–2017</p>
-                            <p><strong>Position:</strong> Junior - Middle developer.</p>
-                            <p><strong>Responsibilities:</strong> support and development of Oracle Siebel CRM system
-                                for a
-                                large russian bank.</p>
-                            <p><strong>Technologies:</strong></p>
-                            <ul>
-                                <li>Oracle Siebel CRM DevKit</li>
-                                <li>Oracle DB</li>
-                                <li>JavaScript</li>
-                            </ul>
+                            <h4 class="project-header selector">VTB Bank</h4>
+                            <div class="project-details">
+                                <p>2015–2017</p>
+                                <p><strong>Position:</strong> Junior - Middle developer.</p>
+                                <p><strong>Responsibilities:</strong> support and development of Oracle Siebel CRM system
+                                    for a large russian bank.</p>
+                                <p><strong>Technologies:</strong></p>
+                                <ul>
+                                    <li>Oracle Siebel CRM DevKit</li>
+                                    <li>Oracle DB</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
                         </article>
                     </section>
                 </article>
                 <article class="company">
-                    <h3>ASAPIO</h3>
+                    <h3 class="company-header selector">ASAPIO</h3>
                     <section class="company-projects">
                         <article class="project">
-                            <h4>ASAPIO CIT</h4>
-                            <p>2017–2018</p>
-                            <p><strong>Position:</strong> junior ABAP developer.</p>
-                            <p><strong>Responsibilities:</strong> development of a custom cloud integrator tool (CIT)
-                                in ABAP language for SAP ECC system.</p>
-                            <p><strong>Technologies:</strong></p>
-                            <ul>
-                                <li>ABAP</li>
-                            </ul>
+                            <h4 class="project-header selector">ASAPIO CIT</h4>
+                            <div class="project-details">
+                                <p>2017–2018</p>
+                                <p><strong>Position:</strong> junior ABAP developer.</p>
+                                <p><strong>Responsibilities:</strong> development of a custom cloud integrator tool (CIT)
+                                    in ABAP language for SAP ECC system.</p>
+                                <p><strong>Technologies:</strong></p>
+                                <ul>
+                                    <li>ABAP</li>
+                                </ul>
+                            </div>
                         </article>
                         <article class="project">
-                            <h4>ASAPIO Time Management Tool</h4>
-                            <p>2017–2019</p>
-                            <p><strong>Position:</strong> junior - middle ABAP/SAPUI5 developer.</p>
-                            <p><strong>Responsibilities:</strong> development of a time management tool for internal use
-                                in ABAP and JavaScript (SAPUI5 framework) languages for SAP ECC system.</p>
-                            <p><strong>Technologies:</strong></p>
-                            <ul>
-                                <li>ABAP</li>
-                                <li>SAP OData</li>
-                                <li>SAP Build</li>
-                                <li>JavaScript (SAPUI5 framework)</li>
-                            </ul>
+                            <h4 class="project-header selector">ASAPIO Time Management Tool</h4>
+                            <div class="project-details">
+                                <p>2017–2019</p>
+                                <p><strong>Position:</strong> junior - middle ABAP/SAPUI5 developer.</p>
+                                <p><strong>Responsibilities:</strong> development of a time management tool for internal use
+                                    in ABAP and JavaScript (SAPUI5 framework) languages for SAP ECC system.</p>
+                                <p><strong>Technologies:</strong></p>
+                                <ul>
+                                    <li>ABAP</li>
+                                    <li>SAP OData</li>
+                                    <li>SAP Build</li>
+                                    <li>JavaScript (SAPUI5 framework)</li>
+                                </ul>
+                            </div>
                         </article>
                         <article class="project">
-                            <h4>Merk</h4>
-                            <p>2018–2019</p>
-                            <p><strong>Position:</strong> middle - senior ABAP developer.</p>
-                            <p><strong>Responsibilities:</strong> adaptation, configuration and development of ASAPIO
-                                CIT
-                                tool,
-                                custom ABAP development for Merk GmbH.</p>
-                            <p><strong>Technologies:</strong></p>
-                            <ul>
-                                <li>ABAP</li>
-                                <li>ABAP Enhancements (BAdI, User-Exits, Customer-Exists etc.)</li>
-                            </ul>
+                            <h4 class="project-header selector">Merk</h4>
+                            <div class="project-details">
+                                <p>2018–2019</p>
+                                <p><strong>Position:</strong> middle - senior ABAP developer.</p>
+                                <p><strong>Responsibilities:</strong> adaptation, configuration and development of ASAPIO
+                                    CIT
+                                    tool,
+                                    custom ABAP development for Merk GmbH.</p>
+                                <p><strong>Technologies:</strong></p>
+                                <ul>
+                                    <li>ABAP</li>
+                                    <li>ABAP Enhancements (BAdI, User-Exits, Customer-Exists etc.)</li>
+                                </ul>
+                            </div>
                         </article>
                     </section>
                 </article>
                 <article class="company">
-                    <h3>SAP</h3>
+                    <h3 class="company-header selector">SAP</h3>
                     <section class="company-projects">
                         <article class="project">
-                            <h4>ABAP performance</h4>
-                            <p>2019-2020</p>
-                            <p><strong>Position:</strong> ABAP performance consultant.</p>
-                            <p><strong>Responsibilities:</strong> performance analysis of various aspects of SAP system
-                                and
-                                ABAP code for different SAP clients in Russia and Europe.</p>
-                            <p><strong>Technologies:</strong></p>
-                            <ul>
-                                <li>ABAP performance analysis tools</li>
-                                <li>SAP ECC</li>
-                                <li>SAP S4H</li>
-                                <li>HANA DB</li>
-                            </ul>
+                            <h4 class="project-header selector">ABAP performance</h4>
+                            <div class="project-details">
+                                <p>2019-2020</p>
+                                <p><strong>Position:</strong> ABAP performance consultant.</p>
+                                <p><strong>Responsibilities:</strong> performance analysis of various aspects of SAP system
+                                    and
+                                    ABAP code for different SAP clients in Russia and Europe.</p>
+                                <p><strong>Technologies:</strong></p>
+                                <ul>
+                                    <li>ABAP performance analysis tools</li>
+                                    <li>SAP ECC</li>
+                                    <li>SAP S4H</li>
+                                    <li>HANA DB</li>
+                                </ul>
+                            </div>
                         </article>
                     </section>
                 </article>
                 <article class="company">
-                    <h3>Deutsch Telekom</h3>
+                    <h3 class="company-header selector">Deutsch Telekom</h3>
                     <section class="company-projects">
                         <article class="project">
-                            <h4>LDM project</h4>
-                            <p>2020-2023</p>
-                            <p><strong>Position:</strong> senior ABAP/SAPUI5 developer.</p>
-                            <p><strong>Responsibilities:</strong> support and development of a custom extension of SAP
-                                DMS
-                                module.</p>
-                            <p><strong>Technologies:</strong></p>
-                            <ul>
-                                <li>ABAP</li>
-                                <li>ABAP Enhancements (BAdI, User-Exits, Customer-Exists etc.)</li>
-                                <li>SAP OData</li>
-                                <li>JavaScript (SAPUI5 framework)</li>
-                                <li>SAP DMS module</li>
-                                <li>SAP HANA development</li>
-                            </ul>
+                            <h4 class="project-header selector">LDM project</h4>
+                            <div class="project-details">
+                                <p>2020-2023</p>
+                                <p><strong>Position:</strong> senior ABAP/SAPUI5 developer.</p>
+                                <p><strong>Responsibilities:</strong> support and development of a custom extension of SAP
+                                    DMS
+                                    module.</p>
+                                <p><strong>Technologies:</strong></p>
+                                <ul>
+                                    <li>ABAP</li>
+                                    <li>ABAP Enhancements (BAdI, User-Exits, Customer-Exists etc.)</li>
+                                    <li>SAP OData</li>
+                                    <li>JavaScript (SAPUI5 framework)</li>
+                                    <li>SAP DMS module</li>
+                                    <li>SAP HANA development</li>
+                                </ul>
+                            </div>
                         </article>
                     </section>
                 </article>
                 <article class="company">
-                    <h3>Accenture</h3>
+                    <h3 class="company-header selector">Accenture</h3>
                     <section class="company-projects">
                         <article class="project">
-                            <h4>LDM project</h4>
-                            <p>2023-Present</p>
-                            <p><strong>Position:</strong> senior ABAP/SAPUI5 developer.</p>
-                            <p><strong>Responsibilities:</strong> support and development of a custom extension of SAP
-                                DMS
-                                module.</p>
-                            <p><strong>Technologies:</strong></p>
-                            <ul>
-                                <li>ABAP</li>
-                                <li>ABAP Enhancements (BAdI, User-Exits, Customer-Exists etc.)</li>
-                                <li>SAP OData</li>
-                                <li>JavaScript (SAPUI5 framework)</li>
-                                <li>SAP DMS module</li>
-                                <li>SAP HANA development</li>
-                            </ul>
+                            <h4 class="project-header selector">LDM project</h4>
+                            <div class="project-details">
+                                <p>2023-Present</p>
+                                <p><strong>Position:</strong> senior ABAP/SAPUI5 developer.</p>
+                                <p><strong>Responsibilities:</strong> support and development of a custom extension of SAP
+                                    DMS
+                                    module.</p>
+                                <p><strong>Technologies:</strong></p>
+                                <ul>
+                                    <li>ABAP</li>
+                                    <li>ABAP Enhancements (BAdI, User-Exits, Customer-Exists etc.)</li>
+                                    <li>SAP OData</li>
+                                    <li>JavaScript (SAPUI5 framework)</li>
+                                    <li>SAP DMS module</li>
+                                    <li>SAP HANA development</li>
+                                </ul>
+                            </div>
                         </article>
                     </section>
                 </article>
