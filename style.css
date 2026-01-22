@@ -1,6 +1,9 @@
 /** {
   outline: 1px solid red;
 }*/
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -27,18 +30,22 @@ header {
     align-items: baseline;
 }
 
+header h1 {
+    margin-right: 10px;
+}
+
 h1, h2, footer {
     color: #52565e;
 }
 
 header nav {
-    width: 50%;
+    width: 60%;
 }
 
 .menu {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     column-gap: 10px;
     padding: 0;
@@ -148,6 +155,7 @@ footer {
     font-weight: bold;
     font-style: italic;
     font-size: 0.9rem;
+    margin-bottom: 10px;
 }
 
 footer p {
@@ -204,4 +212,23 @@ footer p {
         height: 100px;
         margin: 5px;
     }
+}
+
+.form-section {
+    margin: 5px 0 5px 10px;
+}
+
+#section-wayofcontact p {
+    margin-block: 5px;
+}
+
+.form-section label {
+    display: inline-block;
+    width: 15vw;
+}
+
+#contact-form {
+    width: max-content;
+    margin-inline: auto;
+    margin-top: 30px;
 }
