@@ -27,6 +27,10 @@ header {
     align-items: baseline;
 }
 
+h1, h2, footer {
+    color: #52565e;
+}
+
 header nav {
     width: 50%;
 }
@@ -60,6 +64,7 @@ header nav {
 .selector:hover {
     background-color: lightgray;
     transform: scale(1.25);
+    cursor: pointer;
 }
 
 main {
@@ -73,13 +78,15 @@ main {
 
 #picture-figure figcaption {
     text-align: center;
+    font-size: 0.9rem;
+    font-style: italic;
 }
 
 #picture-img {
     width: clamp(200px,28vw, 350px);
 }
 
-.about-text {
+.about-text, .project-details {
     font-size: 1rem;
 }
 
@@ -91,11 +98,11 @@ main {
    margin: 10px 0; 
 }
 
-.company {
+.company, .project {
     margin-left: clamp(16px, 2vw, 32px);
 }
 
-.project {
+.project-details {
     margin-left: clamp(16px, 2vw, 32px);
 }
 
@@ -110,9 +117,91 @@ main {
 .company-header, .project-header {
     /*transition: color 0.2s ease, font-size 0.2s ease;*/
     width: max-content;
-} 
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.skills-list li {
+    list-style: none;
+}
+
+.skill-image {
+    width: 150px;
+    height: 150px;
+    margin: 8px;
+    box-sizing: border-box;
+}
+
+.skill-image:hover {
+    transform: scale(1.1);
+    border: 1px solid blueviolet;
+    cursor: pointer;
+}
 
 footer {
     grid-area: footer;
     text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 3px;
+}
+
+@media only screen and (max-width: 640px){
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.08rem;
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
+
+    .about-text, .project-details {
+        font-size: 0.8rem;
+    }
+
+    .menu li a {
+        font-size: 1.25rem;
+    }
+
+    #picture-figure figcaption {
+        font-size: 0.7rem;
+    }
+
+    #projects h3, h4 {
+        margin: 5px 0; 
+    }
+
+    .project-details p {
+        margin-block: 0.5em;
+    }
+
+    #skills li {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .skill-image {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+    }
 }
