@@ -15,7 +15,8 @@ function registerDomEvents(){
     Array.from(document.getElementsByClassName('skill-image')).forEach(element => {
         element.addEventListener('click', onSkillImageClick);
     });;
-    document.getElementById('contact-form').addEventListener('submit', onContactFormSubmit);
+    const form = document.getElementById('contact-form');
+    if (form) form.addEventListener('submit', onContactFormSubmit);
 }
 
 function onCompanyOrProjectHeaderClick(oEvent){
