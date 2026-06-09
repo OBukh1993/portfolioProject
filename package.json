@@ -1,0 +1,23 @@
+{
+  "name": "portfolioproject",
+  "version": "1.0.0",
+  "description": "Portfolio project",
+  "homepage": "https://github.com/OBukh1993/portfolioProject#readme",
+  "bugs": {
+    "url": "https://github.com/OBukh1993/portfolioProject/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OBukh1993/portfolioProject.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "mocha --recursive --exit"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.6"
+  }
+}
