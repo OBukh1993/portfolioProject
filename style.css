@@ -105,12 +105,30 @@ main {
    margin: 10px 0; 
 }
 
-.company, .project {
+.company, .project, .education-category {
     margin-left: clamp(16px, 2vw, 32px);
 }
 
     .project-details, .education-details {
         margin-left: clamp(16px, 2vw, 32px);
+        padding: 0.75rem 1rem;
+        border-left: 4px solid #7a42d5;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 0 10px 10px 0;
+    }
+
+    .education-details ul {
+        list-style: disc inside;
+        margin: 0.5rem 0 0 0;
+        padding: 0;
+    }
+
+    .education-details ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .education-details p {
+        margin: 0.4rem 0;
     }
 
     .company-projects, .project-details, .education-details {
