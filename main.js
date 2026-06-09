@@ -9,6 +9,9 @@ function registerDomEvents(){
     Array.from(document.getElementsByClassName('project-header')).forEach(element => {
         element.addEventListener('click', onCompanyOrProjectHeaderClick);
     });;
+    Array.from(document.getElementsByClassName('education-header')).forEach(element => {
+        element.addEventListener('click', onCompanyOrProjectHeaderClick);
+    });;
     Array.from(document.getElementsByClassName('skill-image')).forEach(element => {
         element.addEventListener('click', onSkillImageClick);
     });;

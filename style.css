@@ -109,22 +109,21 @@ main {
     margin-left: clamp(16px, 2vw, 32px);
 }
 
-.project-details {
-    margin-left: clamp(16px, 2vw, 32px);
-}
+    .project-details, .education-details {
+        margin-left: clamp(16px, 2vw, 32px);
+    }
 
-.company-projects, .project-details {
-    display: none;
-}
+    .company-projects, .project-details, .education-details {
+        display: none;
+    }
 
-.hidden-section-open {
-    height: max-content;
-}
+    .hidden-section-open {
+        height: max-content;
+    }
 
-.company-header, .project-header {
-    /*transition: color 0.2s ease, font-size 0.2s ease;*/
-    width: max-content;
-}
+    .company-header, .project-header, .education-header {
+        cursor: pointer;
+    }
 
 .skills-list {
     display: flex;
