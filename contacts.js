@@ -32,13 +32,13 @@ function onContactFormSubmit(oEvent){
 const formValidation = {
     validateUserName(value) {
         const trimmedValue = value.trim();
-        const latinTextPattern = /^[A-Za-z\s]+$/;
+        const latinTextPattern = /^[A-Za-z]+$/;
         return trimmedValue.length > 0 && latinTextPattern.test(trimmedValue);
     },
 
     validateUserSurname(value) {
         const trimmedValue = value.trim();
-        const latinTextPattern = /^[A-Za-z\s]+$/;
+        const latinTextPattern = /^[A-Za-z]+$/;
         return trimmedValue.length > 0 && latinTextPattern.test(trimmedValue);
     },
 

@@ -6,6 +6,11 @@ describe('formValidation', () => {
     assert.strictEqual(formValidation.validateUserName(''), false);
   });
 
+  //add test case that name and surname do not contain spaces
+  it('returns false for name with spaces', () => {
+    assert.strictEqual(formValidation.validateUserName('Oleg Bukhtoiarov'), false);
+  });
+
   it('returns true for valid name', () => {
     assert.strictEqual(formValidation.validateUserName('Oleg'), true);
   });
